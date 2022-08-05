@@ -34,13 +34,13 @@ font-family:MONT B;
 
 h2{
 font-weight:BOLDER;
-font-family: semibold;
+font-family:DRUK;
 }
 
 h3{
 font-size: xx-large;
 font-weight:bold;
-font-family:semibold;
+font-family:DRUK;
 color: orange;
 }
 
@@ -65,7 +65,7 @@ min-height: 8vh;
     font-size:2vh;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     min-height: 4vh;
     ;
@@ -79,7 +79,7 @@ min-height: 8vh;
 .navIndexchico {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     min-height: 4vh;
     z-index: +1;
@@ -97,8 +97,25 @@ min-height: 8vh;
     transition: all 200ms;
     color: orange;
 }
+.navbar-expand-lg{
+    color: black;
+}
 
+.hamburguesa{
+    position: fixed;
+    z-index: +2;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1vh;
+    font-family:DRUK;
+    font-size:2vh;
+    min-height: 4vh;
+}
 
+.navbar{
+    border-radius: 10px;
+}
 
 .headerEquipos{
     grid-area: headerEquipos;
@@ -143,9 +160,9 @@ min-height: 8vh;
 
 
 a{
+    text-decoration: none;
     text-align: justify;
     color: antiquewhite; 
-    text-decoration: none;
 }
 
 .tienda{
@@ -227,6 +244,7 @@ padding: 5%;
     justify-content: space-around;
     align-items: center;
     margin-top: auto;
+    
 }
 
 .footer a:hover{
@@ -252,7 +270,7 @@ padding: 5%;
 }
 
 .texto{
-    font-family:regular;
+    font-family:DRUK;
     font-size:xx-large;
     align-items: center;
     color: white ;
@@ -269,6 +287,11 @@ padding: 5%;
     padding-bottom: 3%;
     margin-left: 30%;
     margin-right: 30%;
+}
+
+.noticias{
+    grid-area:noticias;
+    margin: 8%;
 }
 
 .twitter{
@@ -299,6 +322,22 @@ border: solid orange;
     grid-area: headerteams;
 }
 
+.noticiero{
+    grid-area: noticiero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+
+.nuestrasRedes{
+    grid-area: nuestrasRedes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
 /* GRID INDEX */
 .bodyGridIndex{
     display: grid;
@@ -308,6 +347,9 @@ border: solid orange;
     "navIndexChico navIndexChico"
     "carrousel carrousel"
     "equipos equipos"
+    "noticiero noticiero"
+    "noticias noticias" 
+    "nuestrasRedes nuestrasRedes"
     "instagram twitter"
     "twitch twitch"
     "footer footer"
@@ -365,10 +407,10 @@ grid-template-areas:
 
 
                 /* MEDIA RESPONSIVE */
+
     @media (max-width:500px){
         .navIndexchico {
-            padding: 0.1vh;
-            font-size:2%;
+            display: none;
             
         }
 
@@ -401,29 +443,23 @@ grid-template-areas:
     }
 
 
-    @media (max-width:768px){
+@media (max-width:768px){
+    .carrousel{
+        margin-top:0%;
+    }
         
+    .twitch{
+        display: none;
+    }
+    .navIndexchico {
+        display: none;
+    }
 
+    .logo-sinletras{
+        display: none;
+    }
 
-        .carrousel{
-            margin-top:0%;
-        }
-        
-.twitch{
-    display: none;
-}
-.navIndexchico {
-    padding: 0.1vh;
-    font-size:5%;
-    
-}
-
-.logo-sinletras{
-    display: none;
-}
-
-.tienda{
-    
+.tienda{    
     grid-template-columns: 50% 50% ;
     grid-template-rows: 25% 25% 25% 25% ;
     padding: 2%;
@@ -454,15 +490,15 @@ grid-template-areas:
     display: none;
     }
     .navIndexchico {
-        padding: 0.1vh;
-        font-size:100%;
-        ;
+    display: none;
     }
     .carrousel{
         margin-top: 10vh;
     }
 
 }
-
+@media (min-width:1024px){
+    .hamburguesa{display: none;}
+}
 
 /* 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 */
