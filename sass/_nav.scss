@@ -1,0 +1,54 @@
+.navIndex {
+    grid-area: navIndex;
+    position: absolute;
+    z-index: +2;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1vh;
+    background-color: black;
+    font-family:DRUK;
+    font-size:2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 4vh;
+    
+        &:hover{
+            transition: all 200ms;
+            color: orange;
+        }
+
+}
+
+
+
+.navIndexchico {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 4vh;
+    z-index: +1;
+    font-family:DRUK;
+    grid-area: navIndexChico;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0,0,0,0.8);
+
+        &:hover{
+            transition: all 200ms;
+            color: orange;
+        }
+}
+
+.navbar-expand-lg{
+    color: black;
+}
+
+.navbar{
+    border-radius: 10px;
+}

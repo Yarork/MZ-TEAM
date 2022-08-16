@@ -1,0 +1,461 @@
+@font-face {
+  font-family: DRUK;
+  src: url(fuentes/DRUKWIDE-MEDIUM.OTF);
+  font-family: MONT B;
+  src: url(fuentes/Montserrat-Black.ttf);
+  font-family: regular;
+  src: url(fuentes/Montserrat-Regular.ttf);
+  font-family: semibold;
+  src: url(fuentes/Montserrat-SemiBold.ttf);
+}
+.titulos {
+  font-family: semibold;
+  font-size: 6vh;
+  justify-content: space-between;
+  align-items: center;
+  color: orange;
+}
+
+.texto {
+  font-family: DRUK;
+  font-size: xx-large;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  font-weight: bolder;
+  font-family: MONT B;
+}
+
+h2 {
+  font-weight: BOLDER;
+  font-family: DRUK;
+}
+
+h3 {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: DRUK;
+  color: orange;
+}
+
+header {
+  display: flex;
+  font-family: DRUK;
+  font-weight: bolder;
+  flex-direction: row;
+  min-height: 8vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../images/fondoweb.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  grid-area: footer;
+  -o-object-position: bottom;
+  object-position: bottom;
+  background-color: black;
+  font-size: x-large;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footer a:hover {
+  transition: all 300ms;
+  filter: grayscale(1000%);
+}
+
+.navIndex {
+  grid-area: navIndex;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1vh;
+  background-color: black;
+  font-family: DRUK;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 4vh;
+}
+.navIndex:hover {
+  transition: all 200ms;
+  color: orange;
+}
+
+.navIndexchico {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 4vh;
+  z-index: 1;
+  font-family: DRUK;
+  grid-area: navIndexChico;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navIndexchico:hover {
+  transition: all 200ms;
+  color: orange;
+}
+
+.navbar-expand-lg {
+  color: black;
+}
+
+.navbar {
+  border-radius: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  -o-object-position: bottom;
+     object-position: bottom;
+  background-color: black;
+  font-size: x-large;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+}
+.footer:hover {
+  transition: all 300ms;
+  filter: grayscale(1000%);
+}
+
+.hamburguesa {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1vh;
+  font-family: DRUK;
+  font-size: 2vh;
+  min-height: 4vh;
+}
+
+.headerEquipos {
+  grid-area: headerEquipos;
+  padding: 0.5vh;
+  border: 3px orange groove;
+  background-color: black;
+  font-size: 2.5vh;
+  align-items: center;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.headerEquipos a:hover {
+  color: orange;
+  display: flex;
+  transition: all 200ms;
+}
+
+.form {
+  margin: 5%;
+  padding: 2vh;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-size: xx-large;
+  justify-content: space-between;
+  align-items: center;
+  font-style: bolder;
+  color: white;
+}
+
+.form a:hover {
+  transition: 200ms;
+  font-size: 3.2vh;
+  color: orange;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  text-align: justify;
+  color: antiquewhite;
+}
+
+.tienda {
+  grid-area: tienda;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  padding: 2%;
+  margin: 2%;
+  margin-top: 5%;
+  padding-bottom: 0%;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+.players {
+  grid-area: players;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 60% 60%;
+  margin-top: 5%;
+  padding-bottom: 10%;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+.item {
+  display: grid;
+  background-color: rgba(245, 245, 245, 0.1);
+  border: solid white;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.item a:hover {
+  transition: all 300ms;
+  filter: blur(20%);
+  display: flex;
+}
+
+.twitch {
+  grid-area: twitch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  padding: 5%;
+}
+
+.equipos {
+  grid-area: equipos;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  padding: 2%;
+  justify-content: space-around;
+}
+
+.equipos a:hover {
+  z-index: 0;
+  transition: all 500ms;
+  filter: grayscale(80%);
+}
+
+.redes {
+  display: flex;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(254, 182, 20);
+}
+
+.coach {
+  background-color: rgba(245, 245, 245, 0.1);
+  border: solid white;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  grid-area: coach;
+  margin-top: 5%;
+  padding-bottom: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.noticias {
+  grid-area: noticias;
+  margin: 8%;
+}
+
+.twitter {
+  grid-area: twitter;
+  margin: 8%;
+  margin-left: 1%;
+}
+
+.instagram {
+  grid-area: instagram;
+  margin: 8%;
+  margin-right: 1%;
+}
+
+.redesHijos {
+  border-radius: 10px;
+  border: solid orange;
+}
+
+.carrousel {
+  margin: 0%;
+  margin-top: 160px;
+  grid-area: carrousel;
+}
+
+.headerteams {
+  margin: 0%;
+  grid-area: headerteams;
+}
+
+.noticiero {
+  grid-area: noticiero;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.nuestrasRedes {
+  grid-area: nuestrasRedes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+.bodyGridIndex {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "navIndex navIndex" "navIndexChico navIndexChico" "carrousel carrousel" "equipos equipos" "noticiero noticiero" "noticias noticias" "nuestrasRedes nuestrasRedes" "instagram twitter" "twitch twitch" "footer footer";
+}
+
+.bodyPadreGridTienda {
+  display: grid;
+  grid-template-areas: "navIndexChico" "tienda" "footer";
+}
+
+.bodyGridNosotros {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "navIndexChico navIndexChico" "carrousel carrousel" "twitter instagram" "twitch twitch" "footer footer";
+}
+
+.bodyGridEquipos {
+  display: grid;
+  grid-template-areas: "rosters" "navIndexChico" "equipos" "footer";
+}
+
+.bodyPadreGridEquipos {
+  display: grid;
+  grid-template-areas: "navIndexChico" "headerEquipos" "headerteams" "coach" "players" "footer";
+}
+
+@media (max-width: 500px) {
+  .navIndexchico {
+    display: none;
+  }
+  .tienda {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    padding: 2%;
+    margin: 2%;
+    margin-top: 5%;
+    padding-bottom: 0%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 20px;
+    justify-content: space-around;
+  }
+  .item {
+    display: grid;
+    background-color: rgba(245, 245, 245, 0.1);
+    border: solid white;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .carrousel {
+    margin-top: 0%;
+  }
+  .twitch {
+    display: none;
+  }
+  .navIndexchico {
+    display: none;
+  }
+  .logo-sinletras {
+    display: none;
+  }
+  .tienda {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    padding: 2%;
+    margin: 2%;
+    margin-top: 5%;
+    padding-bottom: 0%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 20px;
+    justify-content: space-around;
+  }
+  .item {
+    display: grid;
+    background-color: rgba(245, 245, 245, 0.1);
+    border: solid white;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 1024px) {
+  .navIndex {
+    display: none;
+  }
+  .navIndexchico {
+    display: none;
+  }
+  .carrousel {
+    margin-top: 10vh;
+  }
+}
+@media (min-width: 1024px) {
+  .hamburguesa {
+    display: none;
+  }
+}
+/* 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 *//*# sourceMappingURL=style.css.map */

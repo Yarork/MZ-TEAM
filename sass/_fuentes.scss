@@ -1,0 +1,54 @@
+@font-face {
+
+    font-family:DRUK;
+    src: url(fuentes/DRUKWIDE-MEDIUM.OTF);
+
+    font-family:MONT B;
+    src: url(fuentes/Montserrat-Black.ttf);
+
+    font-family:regular;
+    src: url(fuentes/Montserrat-Regular.ttf);
+
+    font-family:semibold;
+    src: url(fuentes/Montserrat-SemiBold.ttf);
+}
+
+.titulos{
+    font-family:semibold;
+    font-size:6vh;
+    justify-content: space-between;
+    align-items: center;
+    color: orange ;
+}
+
+.texto{
+    font-family:DRUK;
+    font-size:xx-large;
+    align-items: center;
+    color: white ;
+}
+
+h1{
+    font-weight: bolder;
+    font-family:MONT B;
+    }
+    
+h2{
+    font-weight:BOLDER;
+    font-family:DRUK;
+}
+    
+h3{
+    font-size: xx-large;
+    font-weight:bold;
+    font-family:DRUK;
+    color: orange;
+}
+    
+header{
+    display: flex;
+    font-family:DRUK;
+    font-weight: bolder;
+    flex-direction: row;
+    min-height: 8vh;
+}
