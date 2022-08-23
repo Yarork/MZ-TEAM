@@ -1,0 +1,68 @@
+
+.bodyGridIndex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "navIndex navIndex"
+    "navIndexChico navIndexChico"
+    "carrousel carrousel"
+    "equipos equipos"
+    "noticiero noticiero"
+    "noticias noticias" 
+    "nuestrasRedes nuestrasRedes"
+    "instagram twitter"
+    "twitch twitch"
+    "footer footer"
+    ;
+}
+
+
+.bodyPadreGridTienda{
+    display: grid;
+    grid-template-areas:
+    "navIndexChico"
+    "tienda"
+    "footer"
+;
+}
+
+
+
+.bodyGridNosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "navIndexChico navIndexChico"
+    "carrousel carrousel"
+    "h1 h1"
+    "twitter instagram"
+    "twitch twitch"
+    "footer footer"
+    ;
+}
+
+
+
+.bodyGridEquipos{
+    display: grid;
+    grid-template-areas:
+    "rosters"
+    "navIndexChico"
+    "h1"
+    "equipos"
+    "footer"
+    ;
+}
+
+.bodyPadreGridEquipos{
+display: grid;
+grid-template-areas: 
+"navIndexChico"
+"headerEquipos"
+"headerteams"
+"coach"
+"players"
+"footer"
+;
+
+}

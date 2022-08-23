@@ -1,0 +1,21 @@
+/* Mixin */
+
+@mixin parrafos{
+    margin: 2%;
+    font-family:DRUK;
+    font-size:xx-large;
+    align-items: center;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+.textito{
+    @include parrafos;
+}
+
+.textoMixin {
+    @include parrafos;
+    background-color: rgba(243, 236, 222, 0.041);
+    border-radius: 5vh;
+    padding: 5vh;
+  }

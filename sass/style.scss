@@ -1,60 +1,15 @@
-@import "fuentes";
-@import "generales";
-@import "nav";
-@import "variableGlobal";
-
-.hamburguesa{
-    position: fixed;
-    z-index: +2;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1vh;
-    font-family:DRUK;
-    font-size:2vh;
-    min-height: 4vh;
-}
-
-.headerEquipos{
-    grid-area: headerEquipos;
-    padding: 0.5vh;
-    border: 3px orange groove ;
-    background-color: black;
-    font-size: 2.5vh ;
-    align-items: center;
-    min-height:min-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.headerEquipos a:hover{
-    color: orange;
-    display: flex;
-    transition: all 200ms;
-
-}
+@import "fuentes","generales","nav","variableGlobal","grids","mixin","maps","extend";
 
 .form { 
     margin: 5%;
-    padding: 2vh;
+    padding: 9.5vh;
     border-radius: 10px;
     background: rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
     font-size:xx-large;
-    justify-content: space-between;
-    align-items: center;
     font-style: bolder;
     color: white ;
 }
-
-.form a:hover{
-    transition: 200ms;
-    font-size: 3.2vh;
-    color: orange;
-    display: flex;
-}
-
 
 a{
     text-decoration: none;
@@ -101,12 +56,12 @@ a{
     border-radius: 10px;
     margin-top: 10%;
     margin-bottom: 10%;
-}
 
-.item a:hover{
-    transition: all 300ms;
-    filter: blur(20%);
-    display: flex;
+    a:hover{
+        transition: all 300ms;
+        filter: blur(20%);
+        display: flex;
+    }
 }
 
 .twitch{
@@ -119,21 +74,6 @@ margin: 2%;
 padding: 5%;
 }
 
-.equipos{
-    grid-area: equipos;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    padding: 2%;
-    justify-content: space-around;
-    }
-
-.equipos a:hover{
-    z-index: 0;
-    transition: all 500ms;
-    filter: grayscale(80%);
-}
-
-
 
 .redes{
     display: flex;
@@ -143,8 +83,6 @@ padding: 5%;
     align-items: center;
     background-color: rgb(254,182,20);
 }
-
-
 
 .coach{
     background-color: rgba(245, 245, 245,0.1);
@@ -175,18 +113,18 @@ margin-left: 1%;
     margin: 8%;
     margin-right: 1%;
 }
+
 .redesHijos{
 border-radius: 10px;
 border: solid orange;
-
 }
 
 .carrousel{
     margin: 0%;
     margin-top: 160px;
     grid-area: carrousel;
-
 }
+
 .headerteams{
     margin: 0%;
     grid-area: headerteams;
@@ -197,9 +135,8 @@ border: solid orange;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
+    
 }
-
 
 .nuestrasRedes{
     grid-area: nuestrasRedes;
@@ -208,73 +145,6 @@ border: solid orange;
     align-items: center;
     margin: 1%;
 }
-
-.bodyGridIndex{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "navIndex navIndex"
-    "navIndexChico navIndexChico"
-    "carrousel carrousel"
-    "equipos equipos"
-    "noticiero noticiero"
-    "noticias noticias" 
-    "nuestrasRedes nuestrasRedes"
-    "instagram twitter"
-    "twitch twitch"
-    "footer footer"
-    ;
-}
-
-
-.bodyPadreGridTienda{
-    display: grid;
-    grid-template-areas:
-    "navIndexChico"
-    "tienda"
-    "footer"
-;
-}
-
-
-
-.bodyGridNosotros{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-    "navIndexChico navIndexChico"
-    "carrousel carrousel"
-    "twitter instagram"
-    "twitch twitch"
-    "footer footer"
-    ;
-}
-
-
-
-.bodyGridEquipos{
-    display: grid;
-    grid-template-areas:
-    "rosters"
-    "navIndexChico"
-    "equipos"
-    "footer"
-    ;
-}
-
-.bodyPadreGridEquipos{
-display: grid;
-grid-template-areas: 
-"navIndexChico"
-"headerEquipos"
-"headerteams"
-"coach"
-"players"
-"footer"
-;
-
-}
-
 
 @media (max-width:500px){
     .navIndexchico {
@@ -307,11 +177,30 @@ grid-template-areas:
         margin-bottom: 10%;
     }
 
-
+    .texto{
+        font-size: xx-small;
+    }
+    .caracteristicas {
+        font-size: x-small;
+    }
+    .headerEquipos{
+        display: none;
+    }
 }
 
 
 @media (max-width:768px){
+.headerEquipos{
+    display: none;
+}
+.texto{
+    font-size: small;
+}
+
+.caracteristicas{
+    font-size: medium;
+}
+
 .carrousel{
     margin-top:0%;
 }
@@ -340,6 +229,7 @@ backdrop-filter:blur(10px);
 border-radius: 20px;
 justify-content: space-around;
 }
+
 .item{
 display: grid;
 background-color: rgba(245, 245, 245,0.1);
@@ -353,13 +243,37 @@ margin-bottom: 10%;
 
 }
 
+
+
+@media (max-width:800px){
+    .headerEquipos{
+        display: none;
+    }
+    .texto{
+        font-size: larger;
+    }
+    .caracteristicas{
+        font-size: smaller;
+
+    };
+}
+
 @media (max-width:1024px){
+    .headerEquipos{
+        display: none;
+    }
+.texto{
+    font-size: small;
+}
+
 .navIndex{
 display: none;
 }
+
 .navIndexchico {
 display: none;
 }
+
 .carrousel{
     margin-top: 10vh;
 }
@@ -372,4 +286,3 @@ display: none;
 
 
 
-/* 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 */

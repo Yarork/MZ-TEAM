@@ -1,0 +1,13 @@
+/* Map - Get */
+
+$estilo:(font-family:DRUK,color:rgb(230, 224, 218), tamFuente:4vh, margin-top:7vh, justify-content:space-between,align-items:center);
+
+.titulos {
+    color: map-get($map: $estilo, $key:color);
+    font-size: map-get($map: $estilo, $key: tamFuente);
+    font-family: map-get($map: $estilo, $key: font-family);
+    margin-top: map-get($map:$estilo , $key:margin-top);
+    justify-content: map-get($map: $estilo, $key:justify-content);
+    align-items: map-get($map: $estilo, $key: align-items);
+}
+

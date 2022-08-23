@@ -8,36 +8,28 @@
   font-family: semibold;
   src: url(fuentes/Montserrat-SemiBold.ttf);
 }
-.titulos {
-  font-family: semibold;
-  font-size: 6vh;
-  justify-content: space-between;
-  align-items: center;
-  color: orange;
-}
-
-.texto {
-  font-family: DRUK;
-  font-size: xx-large;
-  align-items: center;
-  color: white;
+label {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
 }
 
 h1 {
   font-weight: bolder;
-  font-family: MONT B;
+  font-family: DRUK;
+  grid-area: h1;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 5vh;
 }
 
 h2 {
-  font-weight: BOLDER;
-  font-family: DRUK;
-}
-
-h3 {
+  margin: 10%;
   font-size: xx-large;
   font-weight: bold;
   font-family: DRUK;
   color: orange;
+  text-align: center;
 }
 
 header {
@@ -64,7 +56,7 @@ body {
 .footer {
   grid-area: footer;
   -o-object-position: bottom;
-  object-position: bottom;
+     object-position: bottom;
   background-color: black;
   font-size: x-large;
   justify-content: space-around;
@@ -94,9 +86,10 @@ body {
   align-items: center;
   min-height: 4vh;
 }
-.navIndex:hover {
+.navIndex a:hover {
   transition: all 200ms;
   color: orange;
+  z-index: 2;
 }
 
 .navIndexchico {
@@ -114,7 +107,7 @@ body {
   right: 0%;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.navIndexchico:hover {
+.navIndexchico a:hover {
   transition: all 200ms;
   color: orange;
 }
@@ -125,21 +118,6 @@ body {
 
 .navbar {
   border-radius: 10px;
-}
-
-.footer {
-  grid-area: footer;
-  -o-object-position: bottom;
-     object-position: bottom;
-  background-color: black;
-  font-size: x-large;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: auto;
-}
-.footer:hover {
-  transition: all 300ms;
-  filter: grayscale(1000%);
 }
 
 .hamburguesa {
@@ -168,32 +146,124 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-
 .headerEquipos a:hover {
   color: orange;
   display: flex;
   transition: all 200ms;
 }
 
+.equipos {
+  grid-area: equipos;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  padding: 2%;
+  justify-content: space-around;
+}
+.equipos a:hover {
+  z-index: 0;
+  transition: all 500ms;
+  filter: grayscale(80%);
+}
+
+.footer {
+  grid-area: footer;
+  -o-object-position: bottom;
+     object-position: bottom;
+  background-color: black;
+  font-size: x-large;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+}
+.footer a:hover {
+  transition: all 300ms;
+  filter: grayscale(1000%);
+}
+
+.bodyGridIndex {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "navIndex navIndex" "navIndexChico navIndexChico" "carrousel carrousel" "equipos equipos" "noticiero noticiero" "noticias noticias" "nuestrasRedes nuestrasRedes" "instagram twitter" "twitch twitch" "footer footer";
+}
+
+.bodyPadreGridTienda {
+  display: grid;
+  grid-template-areas: "navIndexChico" "tienda" "footer";
+}
+
+.bodyGridNosotros {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "navIndexChico navIndexChico" "carrousel carrousel" "h1 h1" "twitter instagram" "twitch twitch" "footer footer";
+}
+
+.bodyGridEquipos {
+  display: grid;
+  grid-template-areas: "rosters" "navIndexChico" "h1" "equipos" "footer";
+}
+
+.bodyPadreGridEquipos {
+  display: grid;
+  grid-template-areas: "navIndexChico" "headerEquipos" "headerteams" "coach" "players" "footer";
+}
+
+/* Mixin */
+.textito {
+  margin: 2%;
+  font-family: DRUK;
+  font-size: xx-large;
+  align-items: center;
+  color: whitesmoke;
+  text-align: justify;
+}
+
+.textoMixin {
+  margin: 2%;
+  font-family: DRUK;
+  font-size: xx-large;
+  align-items: center;
+  color: whitesmoke;
+  text-align: justify;
+  background-color: rgba(243, 236, 222, 0.041);
+  border-radius: 5vh;
+  padding: 5vh;
+}
+
+/* Map - Get */
+.titulos {
+  color: rgb(230, 224, 218);
+  font-size: 4vh;
+  font-family: DRUK;
+  margin-top: 7vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Extend */
+.cubito1, .cubito2 {
+  font-size: 30px;
+  text-decoration: none;
+  background-color: rgba(0, 128, 0, 0.425);
+  color: whitesmoke;
+}
+
+.cubito2 {
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  color: whitesmoke;
+  background-color: rgba(255, 0, 0, 0.479);
+}
+
 .form {
   margin: 5%;
-  padding: 2vh;
+  padding: 9.5vh;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   font-size: xx-large;
-  justify-content: space-between;
-  align-items: center;
   font-style: bolder;
   color: white;
-}
-
-.form a:hover {
-  transition: 200ms;
-  font-size: 3.2vh;
-  color: orange;
-  display: flex;
 }
 
 a {
@@ -244,7 +314,6 @@ a {
   margin-top: 10%;
   margin-bottom: 10%;
 }
-
 .item a:hover {
   transition: all 300ms;
   filter: blur(20%);
@@ -259,20 +328,6 @@ a {
   align-items: center;
   margin: 2%;
   padding: 5%;
-}
-
-.equipos {
-  grid-area: equipos;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  padding: 2%;
-  justify-content: space-around;
-}
-
-.equipos a:hover {
-  z-index: 0;
-  transition: all 500ms;
-  filter: grayscale(80%);
 }
 
 .redes {
@@ -337,7 +392,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1%;
 }
 
 .nuestrasRedes {
@@ -346,33 +400,6 @@ a {
   justify-content: center;
   align-items: center;
   margin: 1%;
-}
-
-.bodyGridIndex {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "navIndex navIndex" "navIndexChico navIndexChico" "carrousel carrousel" "equipos equipos" "noticiero noticiero" "noticias noticias" "nuestrasRedes nuestrasRedes" "instagram twitter" "twitch twitch" "footer footer";
-}
-
-.bodyPadreGridTienda {
-  display: grid;
-  grid-template-areas: "navIndexChico" "tienda" "footer";
-}
-
-.bodyGridNosotros {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "navIndexChico navIndexChico" "carrousel carrousel" "twitter instagram" "twitch twitch" "footer footer";
-}
-
-.bodyGridEquipos {
-  display: grid;
-  grid-template-areas: "rosters" "navIndexChico" "equipos" "footer";
-}
-
-.bodyPadreGridEquipos {
-  display: grid;
-  grid-template-areas: "navIndexChico" "headerEquipos" "headerteams" "coach" "players" "footer";
 }
 
 @media (max-width: 500px) {
@@ -403,8 +430,26 @@ a {
     margin-top: 2%;
     margin-bottom: 10%;
   }
+  .texto {
+    font-size: xx-small;
+  }
+  .caracteristicas {
+    font-size: x-small;
+  }
+  .headerEquipos {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
+  .headerEquipos {
+    display: none;
+  }
+  .texto {
+    font-size: small;
+  }
+  .caracteristicas {
+    font-size: medium;
+  }
   .carrousel {
     margin-top: 0%;
   }
@@ -442,7 +487,24 @@ a {
     margin-bottom: 10%;
   }
 }
+@media (max-width: 800px) {
+  .headerEquipos {
+    display: none;
+  }
+  .texto {
+    font-size: larger;
+  }
+  .caracteristicas {
+    font-size: smaller;
+  }
+}
 @media (max-width: 1024px) {
+  .headerEquipos {
+    display: none;
+  }
+  .texto {
+    font-size: small;
+  }
   .navIndex {
     display: none;
   }
@@ -457,5 +519,4 @@ a {
   .hamburguesa {
     display: none;
   }
-}
-/* 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 *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
