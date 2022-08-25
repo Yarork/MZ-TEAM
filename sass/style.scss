@@ -145,6 +145,13 @@ a {
     margin: 1%;
 }
 
+.logoBlanco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
 @media (max-width:500px) {
 
     .titulos{
@@ -209,6 +216,10 @@ a {
 
 @media (max-width:768px) {
 
+    .logoBlanco{
+        display: none;
+    }
+    
     .equipos {
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
