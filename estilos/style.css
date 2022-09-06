@@ -59,7 +59,6 @@ body {
   right: 0;
   padding: 1vh;
   background-color: black;
-  font-family: DRUK;
   font-size: 2vh;
   display: flex;
   flex-direction: row;
@@ -80,7 +79,6 @@ body {
   align-items: center;
   min-height: 4vh;
   z-index: 1;
-  font-family: DRUK;
   grid-area: navIndexChico;
   position: fixed;
   top: 0;
@@ -108,7 +106,6 @@ body {
   left: 0;
   right: 0;
   padding: 1vh;
-  font-family: DRUK;
   font-size: 2vh;
   min-height: 4vh;
 }
