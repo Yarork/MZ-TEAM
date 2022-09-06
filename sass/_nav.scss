@@ -7,7 +7,7 @@
     right: 0;
     padding: 1vh;
     background-color: black;
-    font-size: 2vh;
+    font-size: 4vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -24,10 +24,12 @@
 
 .navIndexchico {
     display: flex;
+    font-style: bolder;
+    font-size: 3vh;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    min-height: 4vh;
+    min-height: 3vh;
     z-index: +1;
     grid-area: navIndexChico;
     position: fixed;
