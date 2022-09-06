@@ -1,15 +1,17 @@
 /* Extend */
 
 .cubito1 {
+
     font-size: 30px;
     text-decoration: none;
     background-color: rgba(0, 128, 0, 0.425);
     color: whitesmoke;
+    margin: 1vh;
 }
 
 .cubito2 {
     @extend .cubito1;
     text-decoration: bold;
-    color:whitesmoke;
+    color: whitesmoke;
     background-color: rgba(255, 0, 0, 0.479);
 }

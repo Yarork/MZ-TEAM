@@ -1,15 +1,14 @@
-.footer{
+.footer {
     grid-area: footer;
     object-position: bottom;
-    background-color:black;
-    font-size:x-large;
+    background-color: black;
+    font-size: x-large;
     justify-content: space-around;
     align-items: center;
     margin-top: auto;
-    
-    a:hover{
+
+    a:hover {
         transition: all 300ms;
         filter: grayscale(1000%);
     }
 }
-$druk: DRUK;

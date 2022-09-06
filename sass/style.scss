@@ -2,6 +2,8 @@
 
 .form {
     margin: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     padding: 9.5vh;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.5);
@@ -23,7 +25,7 @@ a {
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: 50% 50%;
     padding: 2%;
-    margin: 5%; 
+    margin: 5%;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -55,12 +57,50 @@ a {
     margin-top: 10%;
     margin-bottom: 10%;
 
+
     a:hover {
         transition: all 300ms;
         filter: blur(20%);
         display: flex;
     }
 }
+
+.itemsFooter {
+    width: 3vh;
+    height: auto;
+}
+
+.ajusteImg {
+    width: 100%;
+    height: 100%;
+}
+
+.ajusteLogoGrande {
+    width: 15vh;
+    height: 15vh;
+}
+
+.logo-sinletras {
+    width: 10vh;
+    height: 10vh;
+}
+
+.animate__animated {
+    width: 100%;
+    height: 100%;
+}
+
+.animate__backInLeft {
+    width: 100%;
+    height: 100%;
+}
+
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .twitch {
     grid-area: twitch;
@@ -71,7 +111,7 @@ a {
     margin: 2%;
 }
 
-.carrousel-indicators{
+.carrousel-indicators {
     z-index: +1;
 }
 
@@ -160,7 +200,7 @@ a {
 
 
 @media (max-width:1024px) {
-    .titulos{
+    .titulos {
         font-size: 3vh;
     }
 
@@ -205,10 +245,10 @@ a {
 
 @media (max-width:768px) {
 
-    .logoBlanco{
+    .logoBlanco {
         display: none;
     }
-    
+
     .equipos {
         padding: 2%;
         margin: 2%;
@@ -221,7 +261,7 @@ a {
         justify-content: space-around;
     }
 
-    .espaciador{
+    .espaciador {
         margin: 5%;
     }
 
@@ -277,7 +317,7 @@ a {
 
 @media (max-width:500px) {
 
-    .titulos{
+    .titulos {
         font-size: 1vh;
     }
 
@@ -299,7 +339,7 @@ a {
         justify-content: space-around;
     }
 
-    .espaciador{
+    .espaciador {
         margin: 5%;
     }
 

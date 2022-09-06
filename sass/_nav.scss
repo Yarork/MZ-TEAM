@@ -7,15 +7,15 @@
     right: 0;
     padding: 1vh;
     background-color: black;
-    font-family:DRUK;
-    font-size:2vh;
+    font-family: DRUK;
+    font-size: 2vh;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     min-height: 4vh;
-    
-    a:hover{
+
+    a:hover {
         transition: all 200ms;
         color: orange;
         z-index: +2;
@@ -26,74 +26,73 @@
 .navIndexchico {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     min-height: 4vh;
     z-index: +1;
-    font-family:DRUK;
+    font-family: DRUK;
     grid-area: navIndexChico;
     position: fixed;
     top: 0;
     left: 0%;
     right: 0%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 
-        a:hover{
-            transition: all 200ms;
-            color: orange;
-        }
+    a:hover {
+        transition: all 200ms;
+        color: orange;
+    }
 }
 
-.navbar-expand-lg{
+.navbar-expand-lg {
     color: black;
 }
 
-.navbar{
+.navbar {
     border-radius: 10px;
 }
 
-.hamburguesa{
+.hamburguesa {
     position: fixed;
     z-index: +3;
     top: 0;
     left: 0;
     right: 0;
     padding: 1vh;
-    font-family:DRUK;
-    font-size:2vh;
+    font-family: DRUK;
+    font-size: 2vh;
     min-height: 4vh;
 }
 
-.headerEquipos{
+.headerEquipos {
     grid-area: headerEquipos;
     padding: 0.5vh;
-    border: 3px orange groove ;
+    border: 3px orange groove;
     background-color: black;
-    font-size: 2.5vh ;
+    font-size: 2.5vh;
     align-items: center;
-    min-height:min-content;
+    min-height: min-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
-    a:hover{
+    a:hover {
         color: orange;
         display: flex;
         transition: all 200ms;
     }
 }
 
-.equipos{
+.equipos {
     grid-area: equipos;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     padding: 2%;
     justify-content: space-around;
 
-    a:hover{
+    a:hover {
         z-index: 0;
         transition: all 500ms;
         filter: grayscale(80%);
     }
 }
-

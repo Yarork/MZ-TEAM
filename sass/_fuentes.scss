@@ -1,48 +1,39 @@
 @font-face {
 
-    font-family:DRUK;
+    font-family: DRUK;
     src: url(fuentes/DRUKWIDE-MEDIUM.OTF);
-
-    font-family:MONT B;
-    src: url(fuentes/Montserrat-Black.ttf);
-
-    font-family:regular;
-    src: url(fuentes/Montserrat-Regular.ttf);
-
-    font-family:semibold;
-    src: url(fuentes/Montserrat-SemiBold.ttf);
 }
 
 
-label{
-    display: inline-block; 
-    width: 160px; 
+label {
+    display: inline-block;
+    width: 160px;
     height: 40px;
 }
 
 
-h1{
+h1 {
     font-weight: bolder;
-    font-family:$druk;
+    font-family: DRUK;
     grid-area: h1;
     text-align: center;
     color: whitesmoke;
     margin-top: 5vh;
-    }
-    
-h2{
+}
+
+h2 {
     margin: 0%;
     font-size: xx-large;
-    font-weight:bold;
-    font-family:DRUK;
+    font-weight: bold;
+    font-family: DRUK;
     color: orange;
     text-align: center;
 }
 
-    
-header{
+
+header {
     display: flex;
-    font-family:DRUK;
+    font-family: DRUK;
     font-weight: bolder;
     flex-direction: row;
     min-height: 8vh;
