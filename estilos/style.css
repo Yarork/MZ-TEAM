@@ -7,7 +7,6 @@ label {
 
 h1 {
   font-weight: bolder;
-  font-family: DRUK;
   grid-area: h1;
   text-align: center;
   color: whitesmoke;
@@ -18,14 +17,12 @@ h2 {
   margin: 0%;
   font-size: xx-large;
   font-weight: bold;
-  font-family: DRUK;
   color: orange;
   text-align: center;
 }
 
 header {
   display: flex;
-  font-family: DRUK;
   font-weight: bolder;
   flex-direction: row;
   min-height: 8vh;
